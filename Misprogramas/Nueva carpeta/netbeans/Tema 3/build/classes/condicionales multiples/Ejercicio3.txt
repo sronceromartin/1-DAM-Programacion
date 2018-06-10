@@ -1,0 +1,120 @@
+3-Programa que lee un número entero del 0 al 9 y lo devuelva escrito en letras
+
+
+
+package condicionales;
+
+import java.util.Scanner;
+public class Ejercicio3LeerNumeros {
+    
+    public static void main(String[] args) {
+        
+        Scanner lector=new Scanner(System.in);
+        
+        int num;
+        System.out.print(" Introduce un número: ");
+        num=lector.nextInt();
+        
+        switch(num){
+        
+            case 0:
+                
+                if(num==0){
+                
+                    System.out.print("Cero");
+                    
+                }
+                break;
+        
+            case 1:
+                
+                if(num==1){
+                
+                     System.out.print("Uno");
+                }
+        
+                break;
+        
+                
+            case 2:
+                
+                if(num==2){
+                
+                     System.out.print("Dos");
+                
+                }
+        
+                break;
+                
+            case 3:     
+                
+                if(num==3){
+                
+                     System.out.print("tres");
+                }
+                break;
+        
+            case 4:    
+        
+                if(num==4){
+                    
+                     System.out.print("Cuatro");
+                }
+                break;
+                
+            case 5:
+                
+                if(num==5){
+                
+                     System.out.print("Cinco");
+                }
+                break;
+        
+            case 6:
+                
+                if(num==6){
+                
+                     System.out.print("seis");
+                }
+                break;
+        
+            case 7:    
+        
+                if(num==7){
+                
+                     System.out.print("Siete");
+                }
+                break;
+        
+            case 8:
+                
+                if(num==8){
+                
+                     System.out.print("Ocho");
+                
+                }
+                break;
+        
+            case 9:    
+        
+                if(num==9){
+                
+                    System.out.print("Nueve");
+                
+                }
+                break;
+                
+            default:
+            
+                     System.out.print("El dato introducido no es correcto");
+            
+            
+        
+        
+        }
+        
+        
+        
+        
+    }
+}

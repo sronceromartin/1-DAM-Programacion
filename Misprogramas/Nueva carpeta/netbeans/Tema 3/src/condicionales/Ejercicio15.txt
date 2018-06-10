@@ -1,0 +1,28 @@
+15-15. Media. Un programa que lea 4 números y calcule la media.  
+a. Utiliza sólo 1 variable 
+b. ¿y si fueran 10 números? 
+
+
+package condicionales;
+
+import java.util.Scanner;
+public class Ejercicio15 {
+    
+    public static void main(String[] args) {
+        
+        Scanner lector=new Scanner(System.in);
+        double num1,num2,num3,num4;
+        System.out.print(" Introduce un número: ");
+        num1=lector.nextDouble();
+        System.out.print(" Introduce un número: ");
+        num2=lector.nextDouble();
+        System.out.print(" Introduce un número: ");
+        num3=lector.nextDouble();
+        System.out.print(" Introduce un número: ");
+        num4=lector.nextDouble();
+        double media=(num1+num2+num3+num4)/4;
+        System.out.print(" la media es = "+ media);
+        
+        
+    }
+}

@@ -1,0 +1,28 @@
+package condicionales;
+
+import java.util.Scanner;
+public class EjercicioMeses {
+  
+    public static void main(String[] args) {
+        
+        Scanner lector=new Scanner(System.in);
+        String mes;
+        System.out.print(" Introduce el mes: ");
+        mes=lector.nextLine();
+        
+        switch(mes){
+            case "enero": case "marzo": case "mayo": case "julio": case "agosto": case "octubre": case "diciembre":
+                System.out.print(mes +","+ " este mes tiene 31 días");
+                break;
+            case "abril": case "junio": case "septiembre": case "noviembre":
+                System.out.print(mes +","+ " este mes tiene 30 días");
+                break;
+            case "febrero": 
+                System.out.print(mes + ","+ " este mes tiene 28 días o si es bisiesto 29 días");
+                break;
+            default:
+                System.out.print(" No es correcto ");
+        
+        }
+    }
+}

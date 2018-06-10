@@ -1,0 +1,53 @@
+4-Diseña un algoritmo, que al introducir una calificación entre 0 y 10
+(consideramos que las notas son valores enteros), nos devuelva la calificación
+numérica según la siguiente tabla:
+
+
+import java.util.Scanner;
+public class Ejercicio4notas {
+    
+    public static void main(String[] args) {
+        
+        
+        Scanner lector=new Scanner(System.in);
+        int nota;
+        System.out.print(" Introduce una nota: ");
+        nota=lector.nextInt();
+        
+        switch(nota){
+        
+            case 0: case 1: case 2://0,1,2 son las notas va desde el nota>=0 hasta el <3(no incluido este último)
+                
+                System.out.print(" MD ");
+                break;
+            case 3: case 4:    
+                
+                System.out.print(" INS ");
+                break;
+                
+            case 5: case 6:
+                
+                System.out.print(" BIEN ");
+                break;
+                
+            case 7: case 8:
+                
+                System.out.print(" NOT ");
+                break;
+                
+            case 9: case 10:
+                
+                System.out.print(" SOB ");
+                break;
+                
+            default:
+                
+                System.out.print(" La nota no es correcta ");
+                
+        }
+        
+        
+        
+    }
+    
+}

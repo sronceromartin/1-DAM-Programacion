@@ -1,0 +1,24 @@
+3. Escribe un programa que solicite la edad de una persona y muestre un mensaje por 
+pantalla indicando si es mayor de edad o no  
+package condicionales;
+
+import java.util.Scanner;
+public class Ejercicio3 {
+    
+    public static void main(String[] args) {
+        
+        Scanner lector= new Scanner(System.in);
+        int edad;
+        System.out.print("Introduce tu edad: ");
+        edad=lector.nextInt();
+        lector.nextLine();
+        if(edad>=18){
+            System.out.print("Es mayor de edad");
+        }else{
+            System.out.print("No es mayor de edad");
+        
+        }
+        
+    }
+    
+}

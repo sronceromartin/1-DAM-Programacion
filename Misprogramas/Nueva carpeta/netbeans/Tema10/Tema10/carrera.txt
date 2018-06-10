@@ -1,0 +1,11 @@
+<?xml version="1.0">
+<carrera>
+<participante>
+<nombre>pepe</nombre>
+<dorsal>1</dorsal>
+</participante>
+<participante>
+<nombre>marina</nombre>
+<dorsal>2</dorsal>
+</participante>
+</carrera>

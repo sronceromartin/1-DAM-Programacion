@@ -1,0 +1,52 @@
+14-Pedir por teclado el día de la semana y escribir si es lectivo o festivo(fin de semana)
+
+
+package condicionales;
+
+import java.util.Scanner;
+public class Ejercicio14 {
+    
+    public static void main(String[] args) {
+        
+        Scanner lector=new Scanner(System.in);
+        String dia;
+        System.out.print(" Introduce un día de la semana: ");
+        dia=lector.nextLine();
+        
+        if(dia.equals("lunes")){//utilizamos el nombredelavariable.equals, para compara entre strings
+        
+            System.out.print(dia + "," + " es laborable ");
+        
+        }else if(dia.equals("martes")){
+            
+            System.out.print(dia + "," + " es laborable ");
+        
+        }else if(dia.equals("miercoles")){
+        
+            System.out.print(dia + "," + " es laborable ");
+                    
+        }else if(dia.equals("juaves")){
+        
+            System.out.print(dia + "," + " es laborable ");
+        
+        }else if(dia.equals("viernes")){
+        
+            System.out.print(dia + "," + " es laborable ");
+        
+        }else if(dia.equals("sabado")){
+        
+            System.out.print(dia + "," + " es festivo,pertenece al fin de semana ");
+        
+        }else if(dia.equals("domingo")){
+        
+             System.out.print(dia + "," + " es festivo,pertenece al fin de semana ");
+        
+        }else{
+        
+             System.out.print(" El dato introducido no es correcto");
+        
+        } 
+        
+            
+    }
+}

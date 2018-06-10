@@ -1,0 +1,28 @@
+Escribe un programa que visualice en pantalla cuánto le dará su banco después de  
+seis meses si pone 2000€ en una cuenta a plazo fijo al 2,75% anual. Recuerda que
+al pagarte los intereses el banco le retendrá el 18% para hacienda. Escribe los
+mensajes apropiados para entender todos los cálculos.
+ 
+Cantidad inicial: 2000
+Intereses anuales: 55.0
+Intereses a los 6 meses: 27.5
+Retencion Hacienda: 4.95
+Interes neto: 22.55
+Cantidad final: 2022.55
+
+public class Ejercicio1_4 {
+    public static void main(String[] args) {
+        int cantidadInicial=2000;
+        float interesAnual=2.75f;
+        int retencionHacienda=18;
+        float interesNeto;
+        
+        System.out.println("Cantidad Inicial:" + cantidadInicial);
+        System.out.println("Intereses anuales al 2,75%: " + (interesAnual*cantidadInicial)/100);
+        System.out.println("Intereses a los 6 meses: " + ((interesAnual*cantidadInicial)/100)/2);
+        System.out.println("Retención Hacienda: " + ((((interesAnual*cantidadInicial)/100)/2)*retencionHacienda)/100);
+        interesNeto=(((interesAnual*cantidadInicial)/100)/2-((((interesAnual*cantidadInicial)/100)/2)*retencionHacienda)/100);
+        System.out.println("Interés neto: " + interesNeto);
+        System.out.println("Cantidad Final: " + (cantidadInicial + interesNeto));
+    }
+}

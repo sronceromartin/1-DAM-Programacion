@@ -1,0 +1,28 @@
+﻿8-Diseñar un algoritmo que dado el nº de pasos determine la cantidad total a pagar por 
+una llamada telefónica, teniendo en cuenta los siguiente: 
+a. Toda llamada que sea menor o igual de 5 pasos tiene un coste de 0,10 Є 
+b. Cada paso adicional a partir de los 5 primeros cuesta 0,05 Є 
+
+package condicionales;
+
+import java.util.Scanner;
+public class Ejercicio8 {
+    public static void main(String[] args) {
+        
+        Scanner lector=new Scanner(System.in);
+        int pasos;
+        System.out.print(" Introduce el número de pasos: ");
+        pasos=lector.nextInt();
+	int coste=0.10;
+        
+        if(pasos>5){
+	
+            coste=coste+(pasos-5)*0.05;		
+            System.out.print(" El coste de la llamada será de:" + coste +  "centimos");
+            
+              
+        }
+        
+    }
+    
+}

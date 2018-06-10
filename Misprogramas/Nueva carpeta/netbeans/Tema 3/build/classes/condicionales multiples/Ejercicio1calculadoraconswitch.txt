@@ -1,0 +1,60 @@
+4-Calculadora. Leer dos números y una operación (+ */ ) y mostrar el resultado
+
+package condicionales;
+
+
+import java.util.Scanner;
+public class Ejercicio4Conswitch {
+    
+
+    public static void main(String[] args) {
+        
+        Scanner lector=new Scanner(System.in);
+        char operacion;
+        System.out.print(" Introduce un signo: ");
+        operacion=lector.next().charAt(0);
+        int a;
+        System.out.print(" Introduce un valor: ");
+        a=lector.nextInt();
+        int b;  
+        System.out.print(" Introduce un valor: ");
+        b=lector.nextInt();
+        int result;
+             
+        switch(operacion){
+             case '+': 
+                 result=a+b;
+                 System.out.print(result);
+                 break;
+             case '-':
+                 result=a-b;
+                 System.out.print(result);
+                 break;
+             case '*':
+                 result=a*b;
+                 System.out.print(result);
+                 break;
+             case '/':
+                 
+			if(b!=0){
+
+				System.out.print(" Error, no se puede dividir entre 0 ");	
+			}else{
+
+		   		 result=a/b;
+                 		 System.out.print(result);
+                 	         break;
+             default:
+                 System.out.print("El signo introducido no es valido");
+        
+    }
+    
+   
+
+
+
+}
+    
+}
+
+}
